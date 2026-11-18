@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+.material-symbols-rounded {
+    vertical-align: middle;
+    font-size: 20px;
+    font-family: 'Material Symbols Rounded' !important;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+/* Warm gradient background */
+.stApp {
+    background: linear-gradient(160deg, #9b6224 0%, #7f4e1b 30%, #1c1208 70%, #0f0b04 100%) !important;
+    color: #b5894d !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+/* Hide default header background */
+header[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+/* All text white by default */
+p, span, label, li, td, th {
+    color: #fff8ee !important;
+}
+
+/* Headers in warm gradient */
+h1, h2, h3 {
+    background: linear-gradient(90deg, #fbbf24 0%, #f97316 50%, #ef4444 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-weight: 800 !important;
+}
+
+h4, h5, h6 {
+    color: #fbbf24 !important;
+}
+
+/* Divider lines */
+hr {
+    border-color: rgba(251, 191, 36, 0.15) !important;
+}
+
+/* Metric values */
+[data-testid="stMetricValue"] {
+    color: #fbbf24 !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #fff8ee !important;
+}
+
+/* Card containers with warm glow */
+[data-testid="stVerticalBlock"] > div[data-testid="stHorizontalBlock"] > div > div[data-testid="stVerticalBlockBorderWrapper"] {
+    background: rgba(251, 191, 36, 0.04) !important;
+    border: 1px solid rgba(251, 191, 36, 0.2) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 20px rgba(251, 191, 36, 0.08) !important;
+}
+
+/* Progress bars in orange gradient */
+.stProgress > div > div > div > div {
+    background: linear-gradient(90deg, #fbbf24, #f97316) !important;
+}
+
+/* Text inputs warm styling */
+.stTextInput input, .stTextArea textarea {
+    background-color: rgba(251, 191, 36, 0.06) !important;
+    color: #4e2e01 !important;
+    border: 1px solid rgba(251, 191, 36, 0.25) !important;
+    border-radius: 12px !important;
+}
+
+.stTextInput input:focus, .stTextArea textarea:focus {
+    border-color: #fbbf24 !important;
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.3) !important;
+}
+
+.stTextInput input::placeholder, .stTextArea textarea::placeholder {
+    color: rgba(98, 59, 4, 0.4) !important;
+}
+
+/* Dataframe / Table styling */
+[data-testid="stDataFrame"] {
+    border: 1px solid rgba(251, 191, 36, 0.2) !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+/* Caption text */
+.stCaption, [data-testid="stCaptionContainer"] {
+    color: rgba(98, 59, 4, 0.4)  !important;
+}
+
+/* Hero banner */
+.hero-banner {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.15) 0%, rgba(249, 115, 22, 0.1) 100%);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 0 40px rgba(251, 191, 36, 0.1);
+}
+
+.hero-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #fbbf24 0%, #f97316 50%, #ef4444 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+}
+
+.hero-subtitle {
+    color: rgba(255, 248, 238, 0.85) !important;
+    font-size: 1.05rem;
+}
+
+/* Algorithm result cards */
+.algo-card-positive {
+    background: rgba(251, 191, 36, 0.08);
+    border: 1px solid rgba(251, 191, 36, 0.35);
+    border-radius: 14px;
+    padding: 18px;
+    text-align: center;
+}
+
+.algo-card-negative {
+    background: rgba(249, 115, 22, 0.08);
+    border: 1px solid rgba(249, 115, 22, 0.35);
+    border-radius: 14px;
+    padding: 18px;
+    text-align: center;
+}
+
+/* Warm pills */
+.pill-positive {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(251, 191, 36, 0.15);
+    border: 1px solid #fbbf24;
+    color: #fbbf24 !important;
+    padding: 6px 14px;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 4px;
+}
+
+.pill-negative {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(249, 115, 22, 0.15);
+    border: 1px solid #f97316;
+    color: #f97316 !important;
+    padding: 6px 14px;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 4px;
+}
+
+/* Feature word cards */
+.word-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(251, 191, 36, 0.15);
+    border-left: 4px solid #fbbf24;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    color: #fff8ee !important;
+}
+
+/* Confusion matrix section */
+.cm-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(251, 191, 36, 0.15);
+    border-radius: 14px;
+    padding: 16px;
+}
